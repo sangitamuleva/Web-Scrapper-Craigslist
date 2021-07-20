@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from bs4 import BeautifulSoup
 from requests.compat import quote_plus
 import  requests

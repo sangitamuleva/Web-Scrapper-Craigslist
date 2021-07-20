@@ -69,10 +69,17 @@
 
 <form action ="{% url 'new_search' %}" method="post">
     {% csrf_token %}
-    <input type="text" name="search" placeholder="search">
-     <button class="btn waves-effect amber" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
+     <div class="row">
+          <div class="input-field col s8" >
+            <input type="text" name="search" placeholder="search">
+          </div>
+
+          <div class="input-field col s3">
+              <button class="btn waves-effect amber" type="submit" name="action">
+                   <i class="material-icons right">search</i>
+              </button>
+          </div>
+     </div>
 </form>
 {% block content%}
 {% endblock content%}
